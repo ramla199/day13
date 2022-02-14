@@ -42,3 +42,33 @@ console.log(a, b) // return 1 2
 
 const [a, , , , b] = [1, 2, 3, 4, 5]
 console.log(a, b) // return 1 5
+
+
+function AlphabeticalOrder(str) {
+    return str
+        .split("")
+        .sort()
+        .join("");
+}
+
+function evenOnly(arr) {
+    let result = arr.filter(arr => arr % 2 == 0);
+    return result;
+}
+
+function numbersOnly(arr) {
+    return arr.filter(arr => typeof arr == "number");
+}
+
+function minMaxLengthAverage(arr) {
+    const min = Math.min(...arr);
+    const max = Math.max(...arr);
+    const len = arr.length;
+
+    //Reducer for get Average function
+    const ave = arr => arr.reduce((acc, curVal) => acc + curVal, 0) / len;
+    const average = ave(arr);
+
+    //Return output
+    return [min, max, len, average];
+}
