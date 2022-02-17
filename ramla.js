@@ -80,3 +80,18 @@ function reverse_a_number(n) {
 }
 
 console.log(Number(reverse_a_number(32243)));
+
+function reverse_a_number(n) {
+    n = n + "";
+
+    return n.split("").reverse().join("");
+}
+
+const Address = {
+    Australia: { Street: 'Victoria Rd', Suburb: 'Alberta', State: 'NSW', Zip: 2222 }
+}
+function getState(state) {
+    const { Australia: { State: stateName } } = state;
+    return stateName;
+}
+console.log(getState(Address)); //NSW
