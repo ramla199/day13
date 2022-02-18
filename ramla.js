@@ -95,3 +95,23 @@ function getState(state) {
     return stateName;
 }
 console.log(getState(Address)); //NSW
+
+const cars = { a: 'tesla', b: 'ford', c: 'lambo', d: 'lexus' }
+const a = cars.a, // a = tesla
+const b = cars.b, // b = ford
+const c = cars.c, // c = lambo
+const d = cars.d // d = lexus
+
+
+function minMaxLengthAverage(arr) {
+    const min = Math.min(...arr);
+    const max = Math.max(...arr);
+    const len = arr.length;
+
+    //Reducer for get Average function
+    const ave = arr => arr.reduce((acc, curVal) => acc + curVal, 0) / len;
+    const average = ave(arr);
+
+    //Return output
+    return [min, max, len, average];
+}
