@@ -38,3 +38,4 @@ String.prototype.repeatify = String.prototype.repeatify || function (times) {
 
     return str;
 };
+
