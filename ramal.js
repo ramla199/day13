@@ -1,4 +1,4 @@
-const ramal = "hi";
+const ramals = "hi";
 
 
 function reverse_a_number(n) {
@@ -7,7 +7,7 @@ function reverse_a_number(n) {
     return n.split("").reverse().join("");
 }
 
-const Address = {
+const addrss = {
     Australia: { Street: 'Victoria Rd', Suburb: 'Alberta', State: 'NSW', Zip: 2222 }
 }
 function getState(state) {
@@ -95,7 +95,7 @@ console.log(test());
 
 console.log(test.call(obj.prop));
 
-const ramal = "hi";
+const raml = "hi";
 
 
 function reverse_a_number(n) {
@@ -104,7 +104,7 @@ function reverse_a_number(n) {
     return n.split("").reverse().join("");
 }
 
-const Address = {
+const address = {
     Australia: { Street: 'Victoria Rd', Suburb: 'Alberta', State: 'NSW', Zip: 2222 }
 }
 function getState(state) {
